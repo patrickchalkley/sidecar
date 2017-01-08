@@ -5,26 +5,39 @@ html, body
 {
 	margin: 0;
 	padding: 0;
-	color: #fff;
+	color: #000;
 	opacity: 1;
 	cursor: default;
 }
 
 body {
-	background: rgba(14, 13, 16, .15);
+	background: rgba(14, 13, 16, 1);
 }
 
 /* Delete the declaration below if you don't want to fade in jacket */
 
 body
 {
-	opacity: 0;
-	color: #fff;
+	opacity: 1;
+	color: #000;
 }
 
 /* Your properties below */
 
-.progress
+.cover
+{
+	display: block;
+	left: 10px;
+	top: 85px;
+	position: relative;
+	-webkit-background-size: cover !important;
+	width: 800px;
+	height: 800px;
+	background: url(images/default.png) no-repeat;
+	background: rgba(0,0,0, 1);
+}
+
+/*.progress
 {
 	margin:0;
 	padding:0;
@@ -40,7 +53,7 @@ body
 
 .progress span
 {
-	background: rgba(255,255,255, .6);
+	background: rgba(255,255,255, 1);
 	font-family: "Helvetica Neue";
 	position: absolute;
 	top: 0;
@@ -53,51 +66,54 @@ body
 	-webkit-transform: translate3d(0, 0, 0);
 	-webkit-transition:all 1.1s linear;
 	transition:all 1.1s linear;
-}
+}*/
 
-.paused .progress span {
+/*.paused .progress span {
 	-webkit-transition:all .2s linear;
 	transition:all .2s linear;
 	/*top:45%!important;
-	bottom: 45%;*/
+	bottom: 45%;*!/
 	opacity: .75;
+	
 }
 .paused .progress span:before {
 	display: block;
 	content:"||";
 	font-family: "Helvetica Neue";
 	font-weight: 700;
-	font-size: 80px;
-	padding-top: 30px;
-	color: rgba(255,255,255,.3);
-}
+	font-size: 30px;
+	padding-top: 15px;
+	padding-left: 770px;
+	color: rgba(255,255,255, 1);
+}*/
 
 .jacket
 {
 	position:absolute;
 	z-index: 10;
-	width: 298px;
-	height: 1416px;
+	width: 820px;
+	height: 890px;
 	background: transparent;
 	overflow: visible;
+	background: rgba(255,255,255, 0);
 }
 
 .jacket > p
 {
 	font-family: "Helvetica Neue";
 	font-weight: 600;
-	font-size: 40px;
+	font-size: 30px;
 	text-align: left;
 	display:block;
-	width: 1418px;
-	color: rgba(255,255,255,.5);
+	width: 600px;
+	color: rgba(255,255,255, 1);
 	white-space: pre;
 	overflow: visible;
 	text-overflow: ellipsis;
 	position: absolute;
-	bottom:490px;
-	left:-315px;
-	-webkit-transform: rotate(-90deg);
+	/*bottom:505px;*/
+/*	left:-318px;*/
+	/*-webkit-transform: rotate(-90deg);*/
 	-webkit-transition: all .5s linear;
 }
 
@@ -113,14 +129,14 @@ body
 	background: rgba(53, 51, 47, .35);
 	display: block;
 	float: left;
-	padding: 250px 5px 10px 30px;
+	padding: 250px 5px 10px 10px;
 	position:relative;
 	top: -250px;
 }
 
 .jacket .title
 {
-	font-weight: 100;
+	font-weight: 200;
 }
 
 #message {
@@ -130,7 +146,7 @@ body
 	position: fixed;
 	top: 0;
 	color: white;
-	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-family:  "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 45px;
 	font-weight: bold;
 	text-align: center;
@@ -157,8 +173,10 @@ body
 .green .progress span { background: rgba(114, 190, 119, .6); }
 
 .black .progress span { background: rgba(0, 0, 0, 1);    }
+.black .cover { background: rgba(0, 0, 0, 1);  }
 .black .jacket .artist { background: rgba(255, 255, 255, .09); }
-.black { background: rgba(0, 0, 0, .8);  }
+.black { background: rgba(0, 0, 0, 1);  }
+
 
 .white .progress span { background: rgba(255, 255, 255, .6); }
 .white { background: rgba(255,255,255,.15); color: black; }

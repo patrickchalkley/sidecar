@@ -1,11 +1,23 @@
-# Sidecar
+# Sideshow
 
-A minimalist yet huge jacket for [Simplify](http://mmth.us/simplify/). Due to the current inability to specify multiple sizes, this only works on 27" monitors.
+Sideshow is a minimalist jacket for [Simplify](http://mmth.us/simplify/) that showcases cover art, designed for large secondary displays such as an LCD TV.
 
-![screenshot](http://ckyp.us/aUjy+)
+Sideshow currently supports a black colour scheme and displays artwork at 800px. You can click anywhere within the jacket bounds to play/pause.
 
-Now requires Simplify 2.7. Go update.
+Requires Simplify 2.7+  
 
-If you'd like to hack around with this, see the [documentation on Github](https://github.com/mmth/simplify_jackets). Feel free to submit a pull request if you do something awesome. Or kind of awesome. Or a bugfix...
+![screenshot](https://i.imgur.com/MITFFOU.jpg)
 
-[[Saga on BrettTerpstra.com](http://brettterpstra.com/topic/sidecar/)] | [[Demo on YouTube](http://www.youtube.com/watch?feature=player_embedded&v=mgs-8OiYD8I)]
+## Credits
+Sideshow is a remix of the excellent [Sidecar](https://github.com/ttscoff/sidecar) jacket by [Brett Terpstra](http://brettterpstra.com/topic/sidecar/). This would not have been possible without Brett’s hard work.
+
+## Download & Installation
+1. Download the jacket by clicking “Clone or Download” and “Download ZIP”
+2. Double-click the jacket to install it
+3. The jacket is now available to select through the Simplify preferences window.
+
+## Known Issues & Limitations
+- Jacket position will reset if Simplify is quit.
+- Text currently does not truncate to ellipses if overflowing in the title field.
+
+
