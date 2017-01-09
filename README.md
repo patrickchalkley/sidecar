@@ -17,7 +17,6 @@ Sideshow is a remix of the excellent [Sidecar](https://github.com/ttscoff/sideca
 3. The jacket is now available to select through the Simplify preferences window.
 
 ## Known Issues & Limitations
-- Jacket position will reset if Simplify is quit.
 - Text currently does not truncate to ellipses if overflowing in the title field.
 
 
