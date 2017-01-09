@@ -41,7 +41,7 @@
 		Simplify.listen(Simplify.events.ready, function(initial_state)
 		{
 			var screensize = Simplify.getSystemScreenSize();
-			Simplify.setJacketFrame({"height" : 896, "width" : 820, "bottom" : 0, "left" : 0 });
+			Simplify.setJacketFrame({"height" : 896, "width" : 820});
 			//This template jacket will fade in because of this line
 			$('#message').text("").removeClass("show");
 			$("body").animate({"opacity": ".85"},2000);
